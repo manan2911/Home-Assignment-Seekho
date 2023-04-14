@@ -1,0 +1,32 @@
+.dropdownBox {
+  border: 1px solid #ccc;
+  color: #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.dropdownBoxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownBoxHeader h3 {
+  margin: 0;
+}
+
+.arrow {
+  font-size: 1.5em;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.arrow.expanded {
+  transform: rotate(180deg);
+}
+
+.dropdownBoxContent {
+  padding: 10px;
+}
