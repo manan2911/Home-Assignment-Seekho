@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto;
+}
+h2 {
+  color: #ff004d;
+}
+.card {
+  background: #252525;
+  border: 1px solid #ff004d;
+  border-radius: 10px;
+  padding: 20px; /* Add some padding to the card */
+  width: 100%; /* Set the width of the card */
+  max-width: 800px; /* Set a maximum width for the card */
+  text-align: center;
+}
+.card h2 {
+  margin-top: 0; /* Remove the top margin of the h2 element */
+}
+.card hr {
+  margin: 20px 30px; /* Add some margin above and below the horizontal line */
+  border: none; /* Remove the default border */
+  height: 1px; /* Set the height of the line */
+  background-color: rgba(255, 255, 255, 0.09); /* Set the color of the line */
+}
