@@ -8,6 +8,7 @@
   padding-bottom: 30px;
 }
 .title {
+  color: white;
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem; /* add margin */
@@ -15,7 +16,7 @@
 }
 img {
   inline-size: 100%;
-  /*aspect-ratio: 16 / 9; change the aspect ratio as per the images*/
+  aspect-ratio: 10/ 10; /*change the aspect ratio as per the images*/
   object-fit: cover;
   border-radius: 10px;
 }
@@ -25,4 +26,9 @@ img {
   grid-template-rows: min-content;
   text-align: center; /* center the text */
   margin: 10px 0 0 10px;
+}
+h4,
+h5,
+h6 {
+  color: aliceblue;
 }

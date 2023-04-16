@@ -1,20 +1,21 @@
 import React from "react";
 import DropdownBox from "../DropDown/Dropdownbox";
+import "./Trending.css";
 const Trending = () => {
   return (
-    <div>
+    <div className="trendingContainer">
       <h2>TRending Cheeze</h2>
       <DropdownBox
-        title="JEEVAN M RANGO KI ZROORAT H"
-        subtitle="JEEVAN M RANGO KA HONA BAHUT MAHATVA H VRNA JEEVAN FEEKA FEEKA LAGNE LAGTA H VAISE BHI JEEVAN ANANT H NOTHING MATTERS OTHER THAN INTERSTELLAR TRAVELING"
+        title="जीवन में रंगों की जरूरत होती है। यदि यह वह नहीं है जो आप चाहते हैं?"
+        subtitle="जीवन में रंगों की जरूरत होती है। यदि यह वह नहीं है जो आप चाहते हैं - रुकें और इसे बदलें। बस चलते न रहें और उम्मीद करें कि यह।"
       />
       <DropdownBox
-        title="JEEVAN M RANGO KI ZROORAT H"
-        subtitle="JEEVAN M RANGO KA HONA BAHUT MAHATVA H VRNA JEEVAN FEEKA FEEKA LAGNE LAGTA H VAISE BHI JEEVAN ANANT H NOTHING MATTERS OTHER THAN INTERSTELLAR TRAVELING"
+        title="जीवन में रंगों की जरूरत होती है। यदि यह वह नहीं है जो आप चाहते हैं?"
+        subtitle="जीवन में रंगों की जरूरत होती है। यदि यह वह नहीं है जो आप चाहते हैं - रुकें और इसे बदलें। बस चलते न रहें और उम्मीद करें कि यह।"
       />
       <DropdownBox
-        title="JEEVAN M RANGO KI ZROORAT H"
-        subtitle="JEEVAN M RANGO KA HONA BAHUT MAHATVA H VRNA JEEVAN FEEKA FEEKA LAGNE LAGTA H VAISE BHI JEEVAN ANANT H NOTHING MATTERS OTHER THAN INTERSTELLAR TRAVELING"
+        title="जीवन में रंगों की जरूरत होती है। यदि यह वह नहीं है जो आप चाहते हैं?"
+        subtitle="जीवन में रंगों की जरूरत होती है। यदि यह वह नहीं है जो आप चाहते हैं - रुकें और इसे बदलें। बस चलते न रहें और उम्मीद करें कि यह।"
       />
     </div>
   );

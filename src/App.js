@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
+//import { fetchData } from "./api/api";
 import {
   Coupons,
   Artist,
@@ -20,7 +21,7 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setData(data);
-        //console.log({ data });
+        console.log({ data });
       })
       .catch((error) => {
         console.error(error);
@@ -33,9 +34,10 @@ function App() {
         <MainCards />
         <DiscountCard />
         <Coupons />
-        <Series data={data.series_item} />
-        <Artist />
-        <Reviews />
+        {data.series_item && <Series data={data.series_item} />}
+        {/*console.log("Creator item:", data.creator_item);*/}
+        {data.creator_item && <Artist creatorItem={data.creator_item} />}
+        {data.user_item && <Reviews reviewItem={data.user_item} />}
         <Trending />
         <Form />
       </div>

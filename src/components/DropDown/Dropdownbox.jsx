@@ -14,7 +14,12 @@ const DropdownBox = ({ title, subtitle }) => {
         <h3>{title}</h3>
         <span className={`arrow ${isExpanded ? "expanded" : ""}`}>&#9660;</span>
       </div>
-      {isExpanded && <div className="dropdownBoxContent">{subtitle}</div>}
+      {isExpanded && (
+        <div className="dropdownBoxContent">
+          <hr />
+          {subtitle}
+        </div>
+      )}
     </div>
   );
 };

@@ -2,9 +2,9 @@ import React from "react";
 import "./Series.css";
 
 const Series = (props) => {
-  const { title, series_list } = props.data;
-  console.log(title, series_list);
   console.log(props);
+  const { title, series_list } = props.data;
+
   return (
     <div className="mainContainer">
       <div className="titles">

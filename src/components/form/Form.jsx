@@ -1,10 +1,10 @@
 import React from "react";
-import "../form/From.css";
+import "./From.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 const Form = () => {
   return (
-    <div>
+    <div className="formContainer">
       <div className="main-title-form">
         <h2>ASK US ANYTHING</h2>
       </div>

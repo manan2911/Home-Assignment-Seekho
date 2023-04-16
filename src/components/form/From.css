@@ -1,17 +1,20 @@
-.input-text-area textarea {
+.formContainer {
+  width: 100%;
+}
+textarea {
+  width: 95%;
   color: #252525;
   background: #000000;
   border-radius: 10px;
-  height: 200px;
-  padding: 10px;
+  height: 100px;
   resize: none;
 }
 .input-text-area {
-  padding: 5%;
+  padding: 0;
 }
 .main-title-form {
+  padding: 10px 0px 0px 35px;
   text-align: left;
-  padding: 10px 0 0px 100px;
 }
 .whatsapp-button {
   background-color: #4caf50;

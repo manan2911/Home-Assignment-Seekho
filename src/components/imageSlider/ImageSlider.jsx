@@ -9,6 +9,7 @@ const ImageSlider = ({ images }) => {
   };
 
   const translateX = -current * 100;
+  console.log(images);
 
   return (
     <div className="sliderContainer">
@@ -19,9 +20,9 @@ const ImageSlider = ({ images }) => {
         {images.map((image, index) => (
           <div className="slide" key={index}>
             <div className="imageWrapper">
-              <img src={image.src} alt={image.alt} />
+              <img src={image.avatar} alt={image.name} />
             </div>
-            <div className="text">{image.text}</div>
+            <div className="text">{image.review}</div>
           </div>
         ))}
       </div>

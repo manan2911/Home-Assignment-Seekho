@@ -2,7 +2,10 @@ import React from "react";
 import ImageSlider from "../imageSlider/ImageSlider";
 import "./Reviews.css";
 
-const Reviews = () => {
+const Reviews = ({ reviewItem }) => {
+  console.log(reviewItem);
+  const { title, user_list } = reviewItem;
+  console.log(title);
   const images = [
     {
       src: "https://via.placeholder.com/500x500.png?text=Image+1",
@@ -24,9 +27,9 @@ const Reviews = () => {
   return (
     <div className="mainReviewContainer">
       <div className="titleReview">
-        <h2>5 Lakh se bhi adhik logo dvara pasand kia gaya</h2>
+        <h2>{title}</h2>
       </div>
-      <ImageSlider images={images} />
+      <ImageSlider images={user_list} />
     </div>
   );
 };
