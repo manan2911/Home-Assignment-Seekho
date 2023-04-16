@@ -1,11 +1,14 @@
 import React from "react";
 import "./Series.css";
 
-const Series = () => {
+const Series = (props) => {
+  const { title, series_list } = props.data;
+  console.log(title, series_list);
+  console.log(props);
   return (
     <div className="mainContainer">
       <div className="titles">
-        <h2>Seekhein 10000+ Series se</h2>
+        <h2>{title}</h2>
       </div>
       <div className="buy">
         <div className="card1">
@@ -17,26 +20,12 @@ const Series = () => {
       </div>
 
       <div className="imgCards">
-        <div className="cards">
-          <img src="https://via.placeholder.com/300x300" alt="Series 1" />
-          <h4>Series 1</h4>
-        </div>
-        <div className="cards">
-          <img src="https://via.placeholder.com/300x300" alt="Series 2" />
-          <h4>Series 2</h4>
-        </div>
-        <div className="cards">
-          <img src="https://via.placeholder.com/300x300" alt="Series 3" />
-          <h4>Series 3</h4>
-        </div>
-        <div className="cards">
-          <img src="https://via.placeholder.com/300x300" alt="Series 4" />
-          <h4>Series 4</h4>
-        </div>
-        <div className="cards">
-          <img src="https://via.placeholder.com/300x300" alt="Series 5" />
-          <h4>Series 5</h4>
-        </div>
+        {series_list.map((series) => (
+          <div className="cards" key={series.id}>
+            <img src={series.image} alt={series.title} />
+            <h4>{series.display_title}</h4>
+          </div>
+        ))}
       </div>
     </div>
   );

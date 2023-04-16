@@ -22,7 +22,7 @@ const Coupons = () => {
     <div className="containerCoupon">
       <div className="upper">
         <h2>COUPON NAME</h2>
-        <h3>STATUS</h3>
+        <h3>{status}</h3>
         <h2>Amount saved</h2>
       </div>
       <div className="lower">

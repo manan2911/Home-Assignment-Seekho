@@ -12,7 +12,8 @@ const DiscountCard = () => {
         <h2>1 YEAR PLAN</h2>
         <hr />
         <h3>
-          Only for <span style={{ fontSize: "36px" }}>Rs199</span> RS599
+          Only for{" "}
+          <span style={{ fontSize: "36px", color: "white" }}>Rs199</span> RS599
         </h3>
       </div>
     </div>
